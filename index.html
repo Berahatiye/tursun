@@ -3,13 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Website</title>
+    <title>Tursun Harikalar Diyarı</title>
     <style>
 
     </style>
 </head>
-<body>
-<h2>Hoş Geldiniz, <b>Akşama buraları hazırlıyorum; buyrun, gelin, beraber olsun.</h2>
+<body style="height:100vh;">
+<h3>Harput köftesi için; ince bulgur ıslatılır, içine kıyma, yumurta, rendelenmiş soğan, sarımsak, salça, un ve baharatlar eklenip yoğrulur. Nohut büyüklüğünde yuvarlak köfteler yapılır. Tencerede tereyağı ve salçayla hazırlanan sos kaynatılır, köfteler içine atılarak yaklaşık 20 dakika pişirilir. Sıcak servis edilir.</h3>
 
+<button class="lao" onclick="">BAK AMA GÖRME</button>
+
+<div style="bottom: 0; position: absolute; display: flex; margin: 0 auto; gap: 23px; text-align: center; font-family: monospace;">
+<p>ԲԱՐԻ ԳԱԼՈՒՍՏ ՏՈՒՆ</p>
+<p>Hz. Berat Can Tursun (pbuh)</p>
+</div>
 </body>
+
+<style>
+
+*{
+    outline: none;
+}
+
+.lao{
+display: block; 
+margin: 0 auto; 
+font-size: 31px;
+transition: background-color 0.15s ease;
+cursor: pointer;
+}
+
+   .lao:active {
+      animation: colorCycle 1.8s infinite linear;
+      transform: scale(0.97);
+      color: white;
+      border-color: transparent;
+    }
+
+    
+    .lao:not(:active) {
+      animation: none;
+      transition: background-color 0.15s ease;
+    }
+
+    @keyframes colorCycle {
+      0%   { background-color: #FF9E1B; }  
+      33%  { background-color: #001489; }  
+      66%  { background-color: #D90012; } 
+      100% { background-color: #FF9E1B; }
+    }
+
+</style>
+
 </html>
